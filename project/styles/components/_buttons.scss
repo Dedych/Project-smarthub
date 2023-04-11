@@ -5,10 +5,28 @@
     display: inline-block;
     text-decoration: none;
     border: none;
+    @extend %lato-14;
     background-color: var(--button-bg-color);
     color: var(--button-color);
 
+    &--border-sm{
+        border: crem(1px) solid #EEEEEE;
+    }
+
     &--padding-sm{
         padding: 1em;
+    }
+
+    &--padding-sm-tp-1 {
+        padding:0.6875em 1.1875em;
+    }
+
+    &--padding-lrg{
+        padding: cem(16px,map-get($typography, sm-14)) cem(50px,map-get($typography, sm-14));
+    }
+
+    &--darker{
+        color: #fff;
+        background-color: #000;
     }
 }

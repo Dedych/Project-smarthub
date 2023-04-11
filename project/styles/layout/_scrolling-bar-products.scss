@@ -19,13 +19,14 @@
     }
 
     &__item {
-        min-width: calc(crem(325px) - 1rem);
+        min-width: calc(25% - 1rem);
     }
 
     &__image {
         width: 100%;
         aspect-ratio: 1/1;
         object-fit: cover;
+        margin-bottom: crem(10px);
     }
 }
 
@@ -42,3 +43,4 @@
 .wrapper-switcher-buttons {
     text-align: center;
 }
+

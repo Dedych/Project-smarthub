@@ -65,6 +65,10 @@
     display: none;
 }
 
+.list-toolbar__item-toolbar-tablet{
+    display: none;
+}
+
 @include mq(tablet, min) {
 
     .item-links-main__link[href*="./about.html"],
@@ -87,10 +91,16 @@
         display: block;
     }
 
+    .list-toolbar__item-toolbar-tablet{
+        display: block;
+    }
 
+    .cart{
+        display: none;
+    }
 }
 
-@include mq(tablet, max) {}
+
 
 @include mq(desktop, min) {
     .header-navigation {
@@ -98,7 +108,14 @@
         gap: crem(120px)
     }
 
-    .wrapper-cart-body {
+    .list-toolbar__item-toolbar-tablet{
+        display: none;
+    }
+    .cart{
+        display: block;
+    }
+
+    #cart-overlay:checked ~ .wrapper-cart-body {
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -109,4 +126,5 @@
         left: 100%;
         transform: translate(-100%, 100%);
     }
+
 }

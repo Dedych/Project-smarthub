@@ -10,4 +10,8 @@
     &--jost-33{
         @extend %jost-33;
     }
+
+    &--select{
+        text-decoration: underline;
+    }
 }

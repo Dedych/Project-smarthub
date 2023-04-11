@@ -1,25 +1,84 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+$border-for-cart: crem(1px) solid #CDCDCD;
+$padding-total-and-subtotal-price: crem(20px) 0;
 
-
-.wrapper-cart-titles{
-    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:10rem);
-    padding-right: 15em;
+.wrapper-cart-body {
+    display: none;
+    background-color: var(--wrapper-cart-body-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5%;
+    padding: 3em;
 }
 
-.wrapper-cart-titles__title-product:nth-of-type(1){
+.wrapper-cart-titles {
+    @include grid-box ($grid-columns: 40% 20% 25%, $grid-rows: auto, $align-items: start, $justify-items: center, $gap: 0)
+}
+
+.wrapper-cart-titles__title-product:nth-of-type(1) {
     margin-right: auto;
 }
 
-.wrapper-cart-body__item{
-    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:10rem);
-    padding: crem(20px) 0;
+.wrapper-cart-body__list {
+    margin-top: crem(30px);
+    margin-bottom: crem(80px);
 }
 
-.wrapper-product-short-description{
-    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:0);
+.wrapper-cart-body__item {
+    @include grid-box ($grid-columns: 40% 20% 25% 15%, $grid-rows: auto, $align-items: center, $justify-items: unset, $gap: 0);
+    padding: crem(20px) 0;
+    border-top: $border-for-cart;
+
 }
-.wrapper-product-short-description__image{
+
+.wrapper-cart-body__item:last-of-type {
+    border-bottom: $border-for-cart;
+}
+
+.wrapper-product-short-description {
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $gap: 0);
+}
+
+.wrapper-product-short-description__image {
     max-width: crem(80px);
+}
+
+.wrapper-select-product-title {
+    @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: center, $gap: 0.5em);
+}
+
+.wrapper-delete-position {
+    text-align: right;
+}
+
+.wrapper-counter {
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $gap: 0.2em);
+    justify-content: center;
+}
+
+.wrapper-count {
+    padding: 0 cem(30px, map-get($typography, med-16));
+}
+
+.wrapper-subtotal-product-price {
+    text-align: center;
+}
+
+.wrapper-sub-total-price {
+    @include grid-box ($grid-columns: 25% 25%, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 0);
+    padding: $padding-total-and-subtotal-price;
+    border-top: $border-for-cart;
+}
+
+.wrapper-total-price {
+    @include grid-box ($grid-columns: 25% 25%, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 0);
+    padding: $padding-total-and-subtotal-price;
+    margin-bottom: crem(30px);
+    border-top: $border-for-cart;
+    border-bottom: $border-for-cart;
+}
+
+.wrapper-cart-buttons{
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: flex-start, $gap: 1rem)
 }

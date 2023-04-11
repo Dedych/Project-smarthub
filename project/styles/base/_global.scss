@@ -1,4 +1,5 @@
 @use '../themes' as *;
+@use './typography' as *;
 
 :root {
     @include light-theme;
@@ -6,4 +7,10 @@
     @media (prefers-color-scheme: dark) {
         @include dark-theme;
     }
+}
+
+body {
+    font-family: $lato-tp;
+    font-size: $sm-14;
+    line-height: 1.5;
 }

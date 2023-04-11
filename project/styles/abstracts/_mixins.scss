@@ -9,6 +9,15 @@
     gap: $gap;
 }
 
+@mixin grid-box ($grid-columns:1fr,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: 0) {
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+    align-items: $align-items;
+    justify-items: $justify-items;
+    gap: $gap;
+}
+
 @mixin mq($bp, $type: min) {
     @if map_has_key($breakpoints, $bp) {
         $width: map_get($breakpoints, $bp);
