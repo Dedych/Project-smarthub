@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+
+
+.wrapper-cart-titles{
+    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:10rem);
+    padding-right: 15em;
+}
+
+.wrapper-cart-titles__title-product:nth-of-type(1){
+    margin-right: auto;
+}
+
+.wrapper-cart-body__item{
+    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:10rem);
+    padding: crem(20px) 0;
+}
+
+.wrapper-product-short-description{
+    @include flex-box ($flex-direction: row,$flex-wrap:nowrap,$align-items:center,$gap:0);
+}
+.wrapper-product-short-description__image{
+    max-width: crem(80px);
+}

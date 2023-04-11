@@ -1,0 +1,14 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+
+    &--padding-sm{
+        padding: 1em;
+    }
+}

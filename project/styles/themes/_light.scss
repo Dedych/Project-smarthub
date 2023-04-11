@@ -1,0 +1,11 @@
+@mixin light-theme {
+    --foreground-color: #272727;
+    --background-color: #fff;
+    --for-bg-secondary-color: #72AEC8;
+
+    --link-color: var(--foreground-color);
+    --link-selected-color: var(--for-bg-secondary-color);
+
+    --button-color: var(--foreground-color);
+    --button-bg-color: var(--background-color);
+}

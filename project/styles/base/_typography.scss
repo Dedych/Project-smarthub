@@ -1,0 +1,97 @@
+@use '../abstracts' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$typography: (
+    sm-13: 13px,
+    sm-14: 14px,
+    med-16: 16px,
+    med-18: 18px,
+    med-20: 20px,
+    lrg-30: 30px,
+    lrg-33: 33px,
+    lrg-34: 34px,
+    lrg-40: 40px,
+    lrg-83: 83px,
+);
+
+$jost-tp: 'Jost',
+    sans-serif;
+
+$lato-tp: 'Lato',
+    sans-serif;
+
+$sm-13: crem(map-get($typography, sm-13));
+
+%jost-13 {
+    font-family: $jost-tp;
+    font-size: $sm-13;
+}
+
+$sm-14: crem(map-get($typography, sm-14));
+
+%lato-14 {
+    font-family: $lato-tp;
+    font-size: $sm-14;
+}
+
+$med-16: crem(map-get($typography, med-16));
+
+%lato-16 {
+    font-family: $lato-tp;
+    font-size: $med-16;
+}
+
+$med-18: crem(map-get($typography, med-18));
+
+%lato-18 {
+    font-family: $lato-tp;
+    font-size: $med-18;
+}
+
+$med-20: crem(map-get($typography, med-20));
+
+%lato-20 {
+    font-family: $lato-tp;
+    font-size: $med-20;
+}
+
+%jost-20 {
+    font-family: $jost-tp;
+    font-size: $med-20;
+}
+
+$lrg-30: crem(map-get($typography, lrg-30));
+
+%jost-30 {
+    font-family: $jost-tp;
+    font-size: $lrg-30;
+}
+
+$lrg-33: crem(map-get($typography, lrg-33));
+
+%jost-33 {
+    font-family: $jost-tp;
+    font-size: $lrg-33;
+}
+
+$lrg-34: crem(map-get($typography, lrg-34));
+
+%lato-34 {
+    font-family: $lato-tp;
+    font-size: $lrg-34;
+}
+
+$lrg-40: crem(map-get($typography, lrg-40));
+
+%lato-40 {
+    font-family: $lato-tp;
+    font-size: $lrg-40;
+}
+
+$lrg-83: crem(map-get($typography, lrg-83));
+
+%jost-83 {
+    font-family: $jost-tp;
+    font-size: $lrg-83;
+}

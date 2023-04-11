@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.title {
+    @extend %jost-20;
+
+    &--jost-30{
+        @extend %jost-30;
+    }
+    &--jost-33{
+        @extend %jost-33;
+    }
+}

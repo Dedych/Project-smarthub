@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+@mixin flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: flex-start, $gap: 0) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap;
+}
+
+@mixin mq($bp, $type: min) {
+    @if map_has_key($breakpoints, $bp) {
+        $width: map_get($breakpoints, $bp);
+
+        @if $type ==max {
+            // 0.0625em = 1px
+            $width: $width - 0.0625em;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

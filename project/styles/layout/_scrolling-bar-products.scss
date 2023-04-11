@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-scrolling-bar-products {
+    max-width: crem(1300px);
+    margin: crem(120px) auto;
+
+
+    &__list {
+        @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: flex-start, $gap: 1rem);
+        margin-bottom: crem(50px);
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__item {
+        min-width: calc(crem(325px) - 1rem);
+    }
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+
+.wrapper-title-scroll-bar {
+
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: space-between, $gap: 0);
+    margin-bottom: crem(30px);
+}
+
+.wrapper-product-title {
+    @include flex-box ($flex-direction: row, $flex-wrap: wrap, $align-items: center, $justify-content: space-between, $gap: 0);
+}
+
+.wrapper-switcher-buttons {
+    text-align: center;
+}

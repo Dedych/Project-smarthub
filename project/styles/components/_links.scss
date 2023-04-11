@@ -1,0 +1,22 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+    display: inline-block;
+    padding: cem(10px,map_get($typography,sm-14));
+    @extend %lato-14;
+
+    &--selected{
+        color: var(--link-selected-color);
+    }
+
+    &--without-padding{
+        padding: 0;
+    }
+
+    &--ellipsis-border{
+        border-bottom: cem(1px, map_get($typography,sm-14)) dotted var(--link-color);
+    }
+}

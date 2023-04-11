@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.price{
+@extend %lato-20;
+color: var(--for-bg-secondary-color);
+
+&--bigger{
+    @extend %lato-40
+}
+}

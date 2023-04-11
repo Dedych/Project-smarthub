@@ -1,0 +1,112 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.header {
+    max-width: crem(1920px);
+    @extend %margin-l-r-auto;
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: space-around);
+}
+
+.header-navigation {
+
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center)
+}
+
+.header-navigation__list-toolbar {
+    @extend %margin-l-r-auto;
+}
+
+.header__item-links-main {
+    position: relative;
+}
+
+.item-links-main__list-links-extra {
+    display: none;
+    position: absolute;
+}
+
+
+#switcher-extra-links-list:checked~.item-links-main__list-links-extra {
+    display: block;
+}
+
+.item-links-main__link[href*="./about.html"],
+.item-links-main__link[href*="./blogs.html"],
+.item-links-main__link[href*="./contact.html"] {
+    display: none;
+}
+
+.list-toolbar__item-toolbar {
+    display: none;
+    position: relative;
+}
+
+.list-toolbar__item-toolbar-mobile-main {
+    text-align: center;
+    position: relative;
+}
+
+.list-toolbar-mobile {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+}
+
+#switcher-toolbar-mobile:checked~.list-toolbar-mobile {
+    display: block;
+    ;
+
+}
+
+.wrapper-cart-body {
+    display: none;
+}
+
+@include mq(tablet, min) {
+
+    .item-links-main__link[href*="./about.html"],
+    .item-links-main__link[href*="./blogs.html"],
+    .item-links-main__link[href*="./contact.html"] {
+        display: block;
+    }
+
+    .item-links-extra__link[href*="./about.html"],
+    .item-links-extra__link[href*="./blogs.html"],
+    .item-links-extra__link[href*="./contact.html"] {
+        display: none;
+    }
+
+    .list-toolbar__item-toolbar-mobile-main {
+        display: none;
+    }
+
+    .list-toolbar__item-toolbar {
+        display: block;
+    }
+
+
+}
+
+@include mq(tablet, max) {}
+
+@include mq(desktop, min) {
+    .header-navigation {
+        margin-left: auto;
+        gap: crem(120px)
+    }
+
+    .wrapper-cart-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        min-width: 50vw;
+        max-width: crem(1830px);
+        position: absolute;
+        bottom: -100%;
+        left: 100%;
+        transform: translate(-100%, 100%);
+    }
+}

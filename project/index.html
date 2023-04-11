@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title title--jost-33">
+            MiniStore.
+        </h1>
+
+        <nav class="header-navigation">
+
+
+            <ul class="header-navigation__list-links-main list list--horizontal">
+                <li class="list-links-main__item-links-main">
+                    <a class="item-links-main__link link link--selected" href="./index.html">
+                        HOME
+                    </a>
+                </li>
+
+                <li class="header__item-links-main">
+                    <input class="input-dev-helper" id='switcher-extra-links-list' type="checkbox">
+
+                    <label class="item-links-main__link link" for="switcher-extra-links-list" role="button">
+                        PAGES
+
+                        <i class="header__badge fa-solid fa-caret-down"></i>
+                    </label>
+
+
+
+                    <ul class="item-links-main__list-links-extra">
+                        <li class="list-links-extra__item-links-extra">
+                            <a class="item-links-extra__link link" href="./shop.html">
+                                SHOP
+                            </a>
+                        </li>
+
+                        <li class="list-links-extra__item-links-extra">
+                            <a class="item-links-extra__link link" href="./cart.html">
+                                CART
+                            </a>
+                        </li>
+
+                        <li class="list-links-main__item-links-extra ">
+                            <a class="item-links-extra__link link" href="./about.html">
+                                ABOUT
+                            </a>
+                        </li>
+
+                        <li class="list-links-extra__item-links-extra ">
+                            <a class="item-links-extra__link link" href="./blogs.html">
+                                BLOGS
+                            </a>
+                        </li>
+
+                        <li class="list-links-extra__item-links-extra ">
+                            <a class="item-links-extra__link link" href="./contact.html">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-links-main__item-links-main">
+                    <a class="item-links-main__link link" href="./about.html">
+                        ABOUT
+                    </a>
+                </li>
+
+                <li class="list-links-main__item-links-main">
+                    <a class="item-links-main__link link" href="./blogs.html">
+                        BLOGS
+                    </a>
+                </li>
+
+                <li class="list-links-main__item-links-main">
+                    <a class="item-links-main__link link" href="./contact.html">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <ul class="header-navigation__list-toolbar list list--horizontal">
+                <li class="list-toolbar__item-toolbar-mobile-main">
+                    <input class="input-dev-helper" id='switcher-toolbar-mobile' type="checkbox">
+
+                    <label for="switcher-toolbar-mobile" role="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <ul class="list-toolbar-mobile">
+                        <li class="list-toolbar-mobile__item-toolbar-mobile">
+                            <button class="item-toolbar-mobile__button button button--padding-sm">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </li>
+
+                        <li class="list-toolbar-mobile__item-toolbar-mobile">
+                            <button class="item-toolbar-mobile__button button button--padding-sm">
+                                <i class="fa-solid fa-user-large"></i>
+                            </button>
+                        </li>
+
+                        <li class="list-toolbar-mobile__item-toolbar-mobile">
+                            <a class="item-toolbar-mobile__button button button--padding-sm" href="./cart.html">
+                                <i class="fa-solid fa-cart-shopping">
+                                    (2)
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-toolbar__item-toolbar">
+                    <button class="item-toolbar__button button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </li>
+
+                <li class="list-toolbar__item-toolbar">
+                    <button class="item-toolbar__button button">
+                        <i class="fa-solid fa-user-large"></i>
+                    </button>
+                </li>
+
+                <li class="list-toolbar__item-toolbar">
+
+                    <a class="item-toolbar__link link" href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping">
+                            (2)
+                        </i>
+                    </a>
+
+                    <!-- <div class="wrapper-cart-body">
+
+
+
+                        <div class="wrapper-cart-titles">
+                            <h3 class="wrapper-cart-titles__title-product title">
+                                PRODUCT
+                            </h3>
+
+                            <h3 class="wrapper-cart-titles__title-quantity title">
+                                QUANTITY
+                            </h3>
+
+                            <h3 class="wrapper-cart-titles__title-subtotal title">
+                                SUBTOTAL
+                            </h3>
+                        </div> -->
+
+                        <!-- <ul class="wrapper-cart-body__list">
+                            <li class="wrapper-cart-body__item">
+                                <div class="wrapper-product-short-description">
+                                    <picture>
+
+
+                                        <img class="wrapper-product-short-description__image" src="./images/product/iphone-1.jpg" alt="Iphone 13">
+                                    </picture>
+
+                                    <div class="wrapper-product-title title">
+                                        <h3>
+                                            IPHONE 13
+                                        </h3>
+
+                                        <p class="description-product-price-without-discount price">
+                                            $1500.00
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper-counter">
+                                    <button class="button">
+                                        -
+                                    </button>
+
+                                    <div class="wrapper-count">
+                                        1
+                                    </div>
+
+                                    <button class="button">
+                                        +
+                                    </button>
+                                </div>
+
+                                <div class="wrapper-subtotal-product-price">
+                                    <p class="description-product-price-without-discount price price--bigger">
+                                        $1500.00
+                                    </p>
+                                </div>
+
+                                <div class="wrapper-delete-position">
+                                    <button>
+                                        <i class="fa-solid fa-x"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="wrapper-cart-body__item">
+                                <div class="wrapper-product-short-description">
+                                    <picture>
+
+
+                                        <img class="wrapper-product-short-description__image" src="./images/product/apple-watch.jpg" alt="Apple watch pink">
+                                    </picture>
+
+                                    <div class="wrapper-product-title title">
+                                        <h3>
+                                            PINK WATCH
+                                        </h3>
+
+                                        <p class="description-product-price-without-discount price">
+                                            $870.00
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper-counter">
+                                    <button class="button">
+                                        -
+                                    </button>
+
+                                    <div class="wrapper-count">
+                                        1
+                                    </div>
+
+                                    <button class="button">
+                                        +
+                                    </button>
+                                </div>
+
+                                <div class="wrapper-subtotal-product-price">
+                                    <p class="description-product-price-without-discount price price--bigger">
+                                        $870.00
+                                    </p>
+                                </div>
+
+                                <div class="wrapper-delete-position">
+                                    <button>
+                                        <i class="fa-solid fa-x"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2>
+                            CART TOTALS
+                        </h2>
+
+                        <div class="wrapper-sub-total-price">
+                            <h3>
+                                SUBTOTAL
+                            </h3>
+
+                            <p class="description-product-price-without-discount price">
+                                $2370.00
+                            </p>
+                        </div>
+
+                        <div class="wrapper-total-price">
+                            <h3>
+                                TOTAL
+                            </h3>
+
+                            <p class="description-product-price-without-discount price">
+                                $2370.00
+                            </p>
+                        </div>
+
+                        <div class="wrapper-cart-buttons">
+                            <button>
+                                UPDATE CART
+                            </button>
+
+                            <a class="button" href="./shop.html">
+                                CONTINUE SHOPPING
+                            </a>
+
+
+                            <a class="button" href="./checkout.html">
+                                Proceed to checkout
+                            </a>
+
+                        </div>
+
+                    </div> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <body>
+        <section class="section-scrolling-bar-products">
+            <div class="wrapper-title-scroll-bar">
+                <h2 class="wrapper-title-scroll-bar__title title title--jost-30">
+                    SMART WATCHES
+                </h2>
+
+                <a class="link link--ellipsis-border" href="./shop.html">
+                    GO TO SHOP
+                </a>
+            </div>
+
+            <ul class="section-scrolling-bar-products__list">
+                <li id="first-part-watches" class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch.jpg" alt="Pink apple watch">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            PINK WATCH
+                        </h3>
+
+                        <p class="price">
+                            $870
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-1.jpg" alt="Black apple watch sport">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-2.jpg" alt="Black apple watch classic">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-3.jpg" alt="Black apple watch with blue screen">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li  class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch.jpg" alt="Pink apple watch">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            PINK WATCH
+                        </h3>
+
+                        <p class="price">
+                            $870
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-1.jpg" alt="Black apple watch sport">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-2.jpg" alt="Black apple watch classic">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li id="second-part-watches" class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-3.jpg" alt="Black apple watch with blue screen">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li  class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch.jpg" alt="Pink apple watch">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            PINK WATCH
+                        </h3>
+
+                        <p class="price">
+                            $870
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-1.jpg" alt="Black apple watch sport">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-2.jpg" alt="Black apple watch classic">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+
+                <li id="third-part-watches" class="section-scrolling-bar-products__item">
+                    <img class="section-scrolling-bar-products__image" src="./images/product/apple-watch-type-3.jpg" alt="Black apple watch with blue screen">
+
+                    <div class="wrapper-product-title">
+                        <h3 class="title">
+                            HEAVY WATCH
+                        </h3>
+
+                        <p class="price">
+                            $680
+                        </p>
+                    </div>
+                </li>
+            </ul>
+ 
+            <div class="wrapper-switcher-buttons">
+                
+           <a class="product-switcher-bar" href="#first-part-watches">25</a>  
+           <a class="product-switcher-bar" href="#second-part-watches">25</a>    
+           <a class="product-switcher-bar" href="#third-part-watches">25</a>  
+            </div>
+        </section>
+    </body>
+</body>
+
+</html>
