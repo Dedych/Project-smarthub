@@ -8,4 +8,12 @@
     &--secondary-color {
         color: var(--description-color-secondary);
     }
+
+    &--lato-14{
+        @extend %lato-14;
+    }
+
+    &--lato-34{
+        @extend %lato-34;
+    }
 }

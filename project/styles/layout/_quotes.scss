@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-quotes{
+    @include grid-box ($grid-columns:1fr 1fr 1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 0);
+    max-width: crem(1300px);
+    @extend %margin-l-r-auto;
+
+    &__item{
+        text-align: center;
+    }
+    
+}
+
+.wrapper-quotes-icon{
+    grid-column: span 3;
+    
+}
+
+.wrapper-left-switch-button-quotes{
+    justify-self: end;
+}
+
+.wrapper-right-switch-button-quotes{
+    justify-self: start;
+}
+
+@include mq(phone,max) {
+    
+}
