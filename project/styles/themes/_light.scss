@@ -3,11 +3,27 @@
     --background-color: #fff;
     --for-bg-secondary-color: #72AEC8;
 
+
     --link-color: var(--foreground-color);
     --link-selected-color: var(--for-bg-secondary-color);
 
     --button-color: var(--foreground-color);
     --button-bg-color: var(--background-color);
+    --button-color-sec: var(--background-color);
+    --button-bg-color-sec: var(--foreground-color);
+    --button-color-third: #fff;
+    --button-bg-color-third: var(--for-bg-secondary-color);
 
     --wrapper-cart-body-bg-color: var(--background-color);
+
+    --input-color: var(--foreground-color);
+    --input-bg-color: var(--background-color);
+
+    --title-color: var(--foreground-color);
+    --title-color-secondary: var(--background-color);
+
+    --description-color: var(--foreground-color);
+    --description-color-secondary: var(--background-color);
+
+    --section-subscribe-bg-color: var(--foreground-color);
 }

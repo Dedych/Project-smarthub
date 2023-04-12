@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-subscribe {
+    background-color: var(--section-subscribe-bg-color);
+    padding: crem(80px) crem(110px);
+    max-width: crem(1300px);
+    @extend %margin-l-r-auto;
+    @include grid-box ($grid-columns:1fr 1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 1em);
+}
+
+.wrapper-feedback-form__form{
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: center, $gap: 0)
+}
+
+@include mq(tablet,max) {
+    .section-subscribe {
+        @include grid-box ($grid-columns:1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 1em)
+    }
+}
+
+@include mq(phone,max) {
+    .section-subscribe {
+        padding: crem(60px) crem(60px);
+    }
+
+
+    .wrapper-feedback-form__form{
+        @include flex-box ($flex-direction: row, $flex-wrap: wrap, $align-items: center, $justify-content: center, $gap: 0)
+    }
+}

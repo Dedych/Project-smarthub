@@ -21,12 +21,20 @@
         padding:0.6875em 1.1875em;
     }
 
+    &--padding-bigger {
+        padding: cem(16px,map-get($typography, sm-14)) cem(40px,map-get($typography, sm-14));
+    }
+
     &--padding-lrg{
         padding: cem(16px,map-get($typography, sm-14)) cem(50px,map-get($typography, sm-14));
     }
 
-    &--darker{
-        color: #fff;
-        background-color: #000;
+    &--secondary-color{
+        color: var(--button-color-sec);
+        background-color: var(--button-bg-color-sec);
+    }
+    &--third-color{
+        color: var(--button-color-third);
+        background-color: var(--button-bg-color-third);
     }
 }

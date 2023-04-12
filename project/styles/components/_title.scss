@@ -3,6 +3,7 @@
 
 .title {
     @extend %jost-20;
+    color: var(--title-color);
 
     &--jost-30{
         @extend %jost-30;
@@ -13,5 +14,9 @@
 
     &--select{
         text-decoration: underline;
+    }
+
+    &--secondary-color{
+        color: var(--title-color-secondary);
     }
 }

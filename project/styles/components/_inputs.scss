@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+
+
+.input{
+    @extend %lato-16;
+    padding: cem(20px,map-get($typography, med-16)) cem(20px,map-get($typography, med-16));
+    max-width: cem(640px,map-get($typography, med-16));
+    color: var(--input-color);
+    background-color: var(--input-bg-color);
+    border: crem(1px) solid #EEEEEE;
+
+    &--padding-secondary{
+        padding-top: cem(14px,map-get($typography, med-16));
+        padding-bottom: cem(14px,map-get($typography, med-16));
+        padding-left: cem(30px,map-get($typography, med-16));
+        padding-right: cem(30px,map-get($typography, med-16));
+    }
+    
+    &--shorter{
+        max-width: cem(328px,map-get($typography, med-16));
+    }
+    
+}
