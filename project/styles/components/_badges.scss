@@ -23,4 +23,8 @@
         font-size: crem(map_get($typography,lrg-34));
     }
 
+    &--fixed-color {
+        color: var(--badge-color-fixed);
+    }
+
 }

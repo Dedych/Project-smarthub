@@ -196,6 +196,7 @@ table {
   --badge-color: var(--foreground-color);
   --badge-color-sec: var(--for-bg-secondary-color);
   --badge-color-third: #D7DDDF;
+  --badge-color-fixed: #fff;
   --wrapper-cart-body-bg-color: var(--background-color);
   --input-color: var(--foreground-color);
   --input-bg-color: var(--background-color);
@@ -232,7 +233,7 @@ body {
   overflow: hidden;
 }
 
-.section-quotes, .section-subscribe, .header, .header-navigation__list-toolbar {
+.section-insta-shop, .section-quotes, .section-subscribe, .header, .header-navigation__list-toolbar {
   margin-left: auto;
   margin-right: auto;
 }
@@ -319,6 +320,9 @@ body {
 .badge--bigger {
   font-size: 2.125rem;
 }
+.badge--fixed-color {
+  color: var(--badge-color-fixed);
+}
 
 .price {
   color: var(--for-bg-secondary-color);
@@ -356,6 +360,31 @@ body {
 .description--secondary-color {
   color: var(--description-color-secondary);
 }
+.hover-insta-shop {
+  position: relative;
+}
+
+.hover-insta-shop:hover .wrapper-insta-hover-background {
+  display: block;
+}
+
+.wrapper-insta-hover-background {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.wrapper-insta-hover-background__wrapper-insta-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header {
   max-width: 120rem;
   display: flex;
@@ -709,4 +738,50 @@ body {
 
 .wrapper-right-switch-button-quotes {
   justify-self: start;
+}
+
+.section-insta-shop {
+  max-width: 81.25rem;
+}
+
+.wrapper-title-insta-shop__title {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.section-insta-shop__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.section-insta-shop__item {
+  width: 100%;
+  position: relative;
+}
+
+.section-insta-shop__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 61.75em) {
+  .section-insta-shop {
+    padding: 2rem;
+  }
+  .section-insta-shop__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: start;
+    gap: 1rem;
+  }
+  .section-insta-shop__item:last-of-type {
+    grid-column: span 2;
+  }
 }/*# sourceMappingURL=main.css.map */

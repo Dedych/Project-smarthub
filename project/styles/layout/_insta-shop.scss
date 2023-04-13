@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-insta-shop{
+    max-width: crem(1300px);
+    @extend %margin-l-r-auto;
+}
+
+.wrapper-title-insta-shop__title{
+    text-align: center;
+    margin-bottom: crem(30px);
+}
+
+.section-insta-shop__list{
+    @include grid-box ($grid-columns:1fr 1fr 1fr 1fr 1fr,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: 1rem)
+}
+
+.section-insta-shop__item{
+    width: 100%;
+    position: relative;
+}
+.section-insta-shop__image{
+    width: 100%;
+    object-fit: cover;
+}
+
+@include mq(tablet,max){
+    .section-insta-shop{
+        padding: 2rem;
+    }
+    .section-insta-shop__list{
+        @include grid-box ($grid-columns:1fr 1fr ,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: 1rem)
+    } 
+
+    .section-insta-shop__item:last-of-type{
+        grid-column: span 2;
+    }
+}
+
