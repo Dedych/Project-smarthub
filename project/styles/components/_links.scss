@@ -19,4 +19,8 @@
     &--ellipsis-border{
         border-bottom: cem(1px, map_get($typography,sm-14)) dotted var(--link-color);
     }
+
+    &--underline-border{
+        border-bottom: cem(1px, map_get($typography,sm-14)) solid var(--link-color);
+    }
 }
