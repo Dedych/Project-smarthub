@@ -7,25 +7,22 @@
     max-width: crem(1300px);
     @extend %margin-l-r-auto;
     @include grid-box ($grid-columns:1fr 1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 1em);
+
+    @include mq(tablet,max) {
+            @include grid-box ($grid-columns:1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 1em)
+    }
+    
+    @include mq(phone,max) {
+            padding: crem(60px) crem(60px);
+    
+    
+        .wrapper-feedback-form__form{
+            @include flex-box ($flex-direction: row, $flex-wrap: wrap, $align-items: center, $justify-content: center, $gap: 0)
+        }
+    }
 }
 
 .wrapper-feedback-form__form{
     @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: center, $gap: 0)
 }
 
-@include mq(tablet,max) {
-    .section-subscribe {
-        @include grid-box ($grid-columns:1fr,$grid-rows: auto,$align-items: center,$justify-items: center,$gap: 1em)
-    }
-}
-
-@include mq(phone,max) {
-    .section-subscribe {
-        padding: crem(60px) crem(60px);
-    }
-
-
-    .wrapper-feedback-form__form{
-        @include flex-box ($flex-direction: row, $flex-wrap: wrap, $align-items: center, $justify-content: center, $gap: 0)
-    }
-}
