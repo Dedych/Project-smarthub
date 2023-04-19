@@ -41,6 +41,6 @@
 }
 
 .wrapper-switcher-buttons {
-    text-align: center;
+    @include flex-box ($flex-direction: row, $flex-wrap: wrap, $align-items: center, $justify-content: center, $gap: 0.5em);
 }
 

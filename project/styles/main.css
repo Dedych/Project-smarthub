@@ -370,6 +370,7 @@ body {
 
 .hover-insta-shop:hover .wrapper-insta-hover-background {
   display: block;
+  cursor: pointer;
 }
 
 .wrapper-insta-hover-background {
@@ -676,7 +677,12 @@ body {
 }
 
 .wrapper-switcher-buttons {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 .section-subscribe {
@@ -734,6 +740,12 @@ body {
 }
 .section-quotes__item {
   text-align: center;
+  max-width: 20ch;
+  max-height: 10rem;
+  overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  white-space: break-spaces;
 }
 
 .wrapper-quotes-icon {
@@ -746,6 +758,10 @@ body {
 
 .wrapper-right-switch-button-quotes {
   justify-self: start;
+}
+
+.section-quotes__description {
+  font-size: clamp(0.5rem, 2.125rem, 4vw);
 }
 
 .section-insta-shop {
@@ -764,6 +780,7 @@ body {
   position: relative;
 }
 .section-insta-shop__image {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -891,4 +908,19 @@ body {
   .footer__section-secondary-information-payment-delivery {
     padding: 1.5rem 19.438rem;
   }
+}
+.main > .section-insta-shop {
+  margin: 6.25rem auto;
+}
+
+.main > .section-subscribe {
+  margin: 7.5rem auto;
+}
+
+.main > .section-quotes {
+  margin: 7.5rem auto;
+}
+
+.main > .section-scrolling-bar-products {
+  margin: 7.5rem auto;
 }/*# sourceMappingURL=main.css.map */

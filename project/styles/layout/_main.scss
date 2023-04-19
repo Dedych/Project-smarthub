@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+$main-margin-spacing: crem(120px) auto;
+
+.main > .section-insta-shop{
+    margin: crem(100px) auto;
+}
+
+.main > .section-subscribe{
+    margin: $main-margin-spacing;
+}
+
+.main > .section-quotes {
+    margin: $main-margin-spacing;
+}
+
+.main > .section-scrolling-bar-products {
+    margin: $main-margin-spacing;
+}
