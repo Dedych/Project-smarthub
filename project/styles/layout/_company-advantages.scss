@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-our-company-advantages {
+    max-width: crem(1300px);
+
+    &__list {
+        @include grid-box ($grid-columns: 1fr 1fr 1fr 1fr, $grid-rows: auto, $align-items: center, $justify-items: center, $gap: 2em);
+        @include mq(tablet,max) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2em;
+        }
+    }
+
+    &__item{
+        @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: start, $justify-content: center, $gap: 1em)
+    }
+}

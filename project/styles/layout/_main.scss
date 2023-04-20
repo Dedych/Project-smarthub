@@ -7,14 +7,7 @@ $main-margin-spacing: crem(120px) auto;
     margin: crem(100px) auto;
 }
 
-.main > .section-subscribe{
+.main > section:not(.section-insta-shop){
     margin: $main-margin-spacing;
 }
 
-.main > .section-quotes {
-    margin: $main-margin-spacing;
-}
-
-.main > .section-scrolling-bar-products {
-    margin: $main-margin-spacing;
-}
