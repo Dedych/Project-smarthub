@@ -22,11 +22,11 @@
     }
 
     &--padding-bigger {
-        padding: cem(16px,map-get($typography, sm-14)) cem(40px,map-get($typography, sm-14));
+        padding: 1em 2.5em;
     }
 
     &--padding-lrg{
-        padding: cem(16px,map-get($typography, sm-14)) cem(50px,map-get($typography, sm-14));
+        padding: 1em 3.125em;
     }
 
     &--secondary-color{

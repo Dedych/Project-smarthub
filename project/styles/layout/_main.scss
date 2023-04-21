@@ -3,6 +3,7 @@
 
 $main-margin-spacing: crem(120px) auto;
 
+
 .main > .section-insta-shop{
     margin: crem(100px) auto;
 }
@@ -11,3 +12,7 @@ $main-margin-spacing: crem(120px) auto;
     margin: $main-margin-spacing;
 }
 
+.main {
+    max-width: crem(1920px);
+    @extend %margin-l-r-auto;
+}
