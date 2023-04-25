@@ -2,9 +2,11 @@
     --foreground-color: #272727;
     --background-color: #fff;
     --for-bg-secondary-color: #72AEC8;
+    --background-third-color:#EDF1F3;
 
 
     --link-color: var(--foreground-color);
+    --link-secondary-color: var(--for-bg-secondary-color);
     --link-selected-color: var(--for-bg-secondary-color);
 
     --button-color: var(--foreground-color);
@@ -30,7 +32,11 @@
     --description-color: var(--foreground-color);
     --description-color-secondary: var(--background-color);
 
-    --section-tagline-bg-color:#EDF1F3;
+    --section-tagline-bg-color:var(--background-third-color);
+
+    --section-seasonal-offers-bg-color:var(--background-third-color);
+
+    --section-page-information-card-bg-color:var(--background-third-color);
 
     --section-subscribe-bg-color: var(--foreground-color);
 

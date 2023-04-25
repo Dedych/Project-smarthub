@@ -5,6 +5,10 @@
     @extend %jost-20;
     color: var(--title-color);
 
+    &--jost-13{
+        @extend %jost-13;
+    }
+
     &--jost-20{
         @extend %jost-20;
     }

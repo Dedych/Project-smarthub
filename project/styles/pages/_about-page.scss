@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+// section-store-foundation
+.section-store-foundation{
+    max-width: crem(1300px);
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: center, $gap: crem(70px));
+
+    @include mq (tablet,max) {
+        @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: center, $justify-content: center, $gap: crem(70px));
+    }
+
+    &__title{
+        margin-bottom: crem(10px);
+    }
+
+    &__button{
+        margin-top: crem(40px);
+    }
+
+    &__video{
+        @include mq (tablet,max) {
+            width: 100%;
+        }
+    }
+}
+// 

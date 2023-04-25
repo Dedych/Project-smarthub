@@ -8,6 +8,7 @@
     @extend %lato-14;
     background-color: var(--button-bg-color);
     color: var(--button-color);
+    text-align: center;
 
     &--border-sm{
         border: crem(1px) solid #EEEEEE;

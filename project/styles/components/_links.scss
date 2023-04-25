@@ -23,4 +23,8 @@
     &--underline-border{
         border-bottom: cem(1px, map_get($typography,sm-14)) solid var(--link-color);
     }
+
+    &--underline-border-secondary-color{
+        border-color: var(--link-secondary-color);
+    }
 }

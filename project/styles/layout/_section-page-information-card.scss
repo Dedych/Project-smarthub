@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-page-information-card{
+    width: 100%;
+    background-color: var(--section-page-information-card-bg-color);
+    @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: center, $justify-content: center, $gap: 2em);
+    padding: 5em 0;
+}
