@@ -17,9 +17,13 @@
         padding-left: cem(30px,map-get($typography, med-16));
         padding-right: cem(30px,map-get($typography, med-16));
     }
+
+    &--padding-third{
+        padding: 0.625em 1.875em;
+    }
     
     &--shorter{
-        max-width: cem(328px,map-get($typography, med-16));
+        max-width: 20.5em;
     }
     
 }

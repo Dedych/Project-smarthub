@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-switcher-type-selling-items {
+    @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: start, $justify-content: flex-start, $gap: 0.625em);
+
+    &__list{
+        @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: start, $justify-content: flex-start, $gap: 0.5em);
+    }
+}
