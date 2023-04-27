@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.wrapper-counter {
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $gap: 0.2em);
+}
+
+.wrapper-count {
+    padding: 0 1.875em;
+}

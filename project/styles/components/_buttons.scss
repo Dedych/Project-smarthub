@@ -32,6 +32,10 @@
         padding: 1em 2.5em;
     }
 
+    &--padding-bigger-tp-1{
+        padding: 1.17em 2.5em;
+    }
+
     &--padding-lrg{
         padding: 1em 3.125em;
     }
@@ -52,5 +56,13 @@
     &--fourth-color{
         color: var(--button-color-fourth);
         background-color: var(--button-bg-color-fourth);
+    }
+
+    &--jost-30{
+        @extend %jost-30;
+    }
+
+    &--selected{
+        text-decoration: underline;
     }
 }

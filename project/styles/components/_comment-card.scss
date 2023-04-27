@@ -1,0 +1,15 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.wrapper-comment-card{
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: flex-start, $gap: crem(20px));
+
+    &__image{
+        display: block;
+        max-width: crem(105px);
+    }
+}
+
+.wrapper-user-comment{
+    @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: flex-start, $justify-content: center, $gap: crem(5px));
+}
