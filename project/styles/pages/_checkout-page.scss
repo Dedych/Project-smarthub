@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+// section checkout
+.section-checkout{
+    max-width: crem(1300px);
+    @include grid-box ($grid-columns:1fr 1fr,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: 0);
+    
+}
+// 

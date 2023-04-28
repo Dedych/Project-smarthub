@@ -419,6 +419,9 @@ body {
 .input--shorter {
   max-width: 20.5em;
 }
+.input--full-width {
+  width: 100%;
+}
 
 .description {
   color: var(--description-color);
@@ -1699,5 +1702,15 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: start;
+  gap: 0;
+}
+
+.section-checkout {
+  max-width: 81.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
   gap: 0;
 }/*# sourceMappingURL=main.css.map */

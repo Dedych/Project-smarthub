@@ -6,7 +6,7 @@
 .input{
     @extend %lato-16;
     padding: cem(20px,map-get($typography, med-16)) cem(20px,map-get($typography, med-16));
-    max-width: cem(640px,map-get($typography, med-16));
+    max-width: 40em;
     color: var(--input-color);
     background-color: var(--input-bg-color);
     border: crem(1px) solid #EEEEEE;
@@ -24,6 +24,10 @@
     
     &--shorter{
         max-width: 20.5em;
+    }
+
+    &--full-width{
+        width: 100%;
     }
     
 }
