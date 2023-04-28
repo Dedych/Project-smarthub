@@ -2,9 +2,55 @@
 @use '../base' as *;
 
 // section checkout
-.section-checkout{
+.section-checkout {
     max-width: crem(1300px);
-    @include grid-box ($grid-columns:1fr 1fr,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: 0);
-    
+    @include grid-box ($grid-columns: 1fr 1fr, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 0);
+    column-gap: crem(20px);
+
 }
+
+.wrapper-billing-details-form {
+    justify-self: stretch;
+    margin-bottom: crem(120px);
+}
+
+
+.form-label {
+    margin: crem(30px) 0;
+    @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: flex-start, $justify-content: flex-start, $gap: crem(10px));
+}
+
+
+.wrapper-additional-information-form {
+    justify-self: stretch;
+}
+
+.wrapper-checkout-cart-total {
+    width: 100%;
+    grid-column: span 2;
+    border-bottom: 1px solid var(--checkout-cart-border-color);
+    @include grid-box ($grid-columns:1fr,$grid-rows: auto,$align-items: start,$justify-items: start,$gap: crem(30px));
+
+    
+
+    &__container-price {
+        width: 100%;
+        border-top: 1px solid var(--checkout-cart-border-color);
+        @include grid-box ($grid-columns:1fr 1fr,$grid-rows: auto,$align-items: center,$justify-items: start,$gap: 0);
+    }
+}
+
+.form-payment-options{
+    grid-column: span 2;
+    margin: crem(30px) 0;
+}
+
+.form-label-radio{
+    @include flex-box ($flex-direction: row, $flex-wrap: nowrap, $align-items: center, $justify-content: flex-start, $gap: crem(15px));
+    margin: crem(20px) 0;
+
+}
+
+
+
 // 
