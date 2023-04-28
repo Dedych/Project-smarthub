@@ -61,7 +61,7 @@
 
 }
 
-.wrapper-cart-body {
+.wrapper-cart-overlay {
     display: none;
 }
 
@@ -115,7 +115,7 @@
         display: block;
     }
 
-    #cart-overlay:checked ~ .wrapper-cart-body {
+    #cart-overlay:checked ~ .wrapper-cart-body>.wrapper-cart-overlay {
         display: flex;
         flex-direction: column;
         gap: 1em;
