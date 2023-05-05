@@ -351,6 +351,10 @@ body {
 .link--underline-border-secondary-color {
   border-color: var(--link-secondary-color);
 }
+.link--not-active {
+  pointer-events: none;
+  cursor: not-allowed;
+}
 
 .list--horizontal {
   display: flex;
@@ -1449,6 +1453,77 @@ body {
 
 .wrapper-selling-item-reviews-comments > .wrapper-comment-card {
   margin-top: 1.875rem;
+}
+
+.section-contacts {
+  max-width: 81.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
+  gap: 1rem;
+  row-gap: 7.5rem;
+}
+@media only screen and (max-width: 61.75em) {
+  .section-contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: start;
+    gap: 1rem;
+  }
+}
+
+.wrapper-contact-part {
+  justify-self: stretch;
+}
+.wrapper-contact-part__contact-part-header-container {
+  margin-bottom: 1.875rem;
+}
+.wrapper-contact-part__list-main-contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
+  gap: 1rem;
+}
+.wrapper-contact-part__list-additional-contact-information {
+  margin-top: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+.wrapper-contact-part__form-contact-part {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
+  gap: 0;
+  row-gap: 1.875rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.wrapper-contact-part__image {
+  width: 100%;
+  display: block;
+}
+
+.form-contact-part__input {
+  grid-column: span 2;
+}
+.form-contact-part__input:nth-of-type(1) {
+  grid-column: span 1;
+}
+.form-contact-part__input:nth-of-type(2) {
+  grid-column: span 1;
 }
 
 .section-blogs-cards {

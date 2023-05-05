@@ -28,4 +28,9 @@
     &--underline-border-secondary-color{
         border-color: var(--link-secondary-color);
     }
+
+    &--not-active{
+        pointer-events: none;
+            cursor: not-allowed;
+    }
 }

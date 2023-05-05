@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section-contacts {
+    max-width: crem(1300px);
+    @include grid-box ($grid-columns: 1fr 1fr, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 1rem);
+
+    row-gap: crem(120px);
+
+    @include mq(tablet, max) {
+        @include grid-box ($grid-columns: 1fr, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 1rem);
+    }
+}
+
+.wrapper-contact-part {
+    justify-self: stretch;
+
+    &__contact-part-header-container {
+        margin-bottom: crem(30px);
+    }
+
+    &__list-main-contact-content {
+        @include grid-box ($grid-columns: 1fr 1fr, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 1rem);
+    }
+
+    &__list-additional-contact-information {
+        margin-top: crem(14px);
+        @include flex-box ($flex-direction: column, $flex-wrap: nowrap, $align-items: start, $justify-content: flex-start, $gap: crem(10px));
+    }
+
+    &__form-contact-part {
+        width: 100%;
+        @include grid-box ($grid-columns: 1fr 1fr, $grid-rows: auto, $align-items: start, $justify-items: start, $gap: 0);
+
+        row-gap: crem(30px);
+        column-gap: crem(20px);
+    }
+
+    &__image {
+        width: 100%;
+        display: block;
+    }
+}
+
+.form-contact-part {
+$span-col-grid-1: span 1;
+$span-col-grid-2: span 2;
+
+    &__input {
+        grid-column: $span-col-grid-2;
+
+        &:nth-of-type(1) {
+            grid-column: $span-col-grid-1;
+        }
+
+        &:nth-of-type(2) {
+            grid-column: $span-col-grid-1;
+        }
+    }
+
+
+}
